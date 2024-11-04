@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar - Cafe Street</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50">
+
+    <div>
+ <!-- Navbar -->
+ <nav class="bg-amber-50 border-b border-amber-100">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+            <img src="/photos/Logo.svg" alt="Cafe Street Logo" class="w-24 h-18 ">
+            <span class="text-2xl font-bold text-orange-600 pl-6">Cafe Street</span>
+        </div>
+
+        <!-- Links -->
+        <div class="hidden md:flex space-x-6 items-center text-xl">
+            <a href="#about" class=" hover:text-orange-600">About us</a>
+            <a href="#product" class=" hover:text-orange-600">Our Product</a>
+            <a href="#delivery" class=" hover:text-orange-600">Delivery</a>
+        </div>
+
+      
+
+        <!-- Mobile Menu Button -->
+        <button id="menuButton" class="md:hidden  hover:text-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-amber-100 bg-amber-50">
+        <div class="px-4 py-3 space-y-2">
+            <a href="#about" class="block  hover:text-orange-600">About us</a>
+            <a href="#product" class="block  hover:text-orange-600">Our Product</a>
+            <a href="#delivery" class="block  hover:text-orange-600">Delivery</a>
+           
+    </div>
+</nav>
+    </div>
+   <div>
+   
+
+    <!-- Landing Section -->
+    <section class="container mx-auto flex flex-col md:flex-row items-center px-4 py-8 md:py-16 space-y-8 md:space-y-0">
+        
+        <!-- Text Content -->
+        <div class="md:w-1/2 space-y-4">
+            <h1 class="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
+                Enjoy your <span class="text-orange-500">coffee</span> <br>
+                before your activity
+            </h1>
+            <p class="text-gray-600 text-2xl">
+                Boost your productivity and build your mood with a glass of coffee in the morning.
+            </p>
+            <div class="flex items-center space-x-4">
+                <button class="bg-black text-white px-6 py-3 rounded-full text-sm font-semibold flex items-center space-x-2 hover:bg-gray-800 transition">
+                    <span>Order now</span>
+                    <span>☕</span>
+                </button>
+                <a href="#" class="text-orange-500 font-semibold hover:underline">More menu</a>
+            </div>
+        </div>
+
+        <div class="flex justify-center relative w-">
+            <div class="relative">
+                <img src="/photos/img-hero.png" alt="Cappuccino" class="">
+                
+             
+            </div>
+        </div>
+
+    </section>
+    <!-- Popular Now Section -->
+    <section class="container mx-auto px-4 py-8">
+        <h2 class="text-5xl font-bold text-gray-800 mb-6">Popular <span class="text-orange-500">Now</span></h2>
+
+        <!-- Card Container -->
+        <div class="grid gap-6 md:grid-cols-3">
+            
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center">
+                <div class="relative w-full">
+                    <img src="/photos/img_product.png" alt="Vanilla Latte" class="rounded-lg w-full">
+                    <div class="absolute top-2 left-2 bg-white px-2 py-1 rounded-full text-xs font-semibold shadow-md flex items-center space-x-1">
+                        <span>4.8</span>
+                        <span>⭐</span>
+                    </div>
+                </div>
+                <div class="mt-4 text-center">
+                    <h3 class="text-2xl font-semibold text-gray-800">Vanilla Latte</h3>
+                    <p class="text-orange-500 font-semibold">21K</p>
+                    <div class="flex space-x-2 mt-2">
+                        <span class="text-xs bg-orange-200 text-orange-800 font-semibold px-2 py-1 rounded-full">Hot</span>
+                        <span class="text-xs bg-orange-200 text-orange-800 font-semibold px-2 py-1 rounded-full">Cold</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center">
+                <div class="relative w-full">
+                    <img src="/photos/awd.png" alt="Espresso" class="rounded-lg">
+                    <div class="absolute top-2 left-2 bg-white px-2 py-1 rounded-full text-xs font-semibold shadow-md flex items-center space-x-1">
+                        <span>4.8</span>
+                        <span>⭐</span>
+                    </div>
+                </div>
+                <div class="mt-4 text-center">
+                    <h3 class="text-2xl font-semibold text-gray-800">Espresso</h3>
+                    <p class="text-orange-500 font-semibold">12K</p>
+                    <div class="flex space-x-2 mt-2">
+                        <span class="text-xs bg-orange-200 text-orange-800 font-semibold px-2 py-1 rounded-full">Hot</span>
+                        <span class="text-xs bg-orange-200 text-orange-800 font-semibold px-2 py-1 rounded-full">Cold</span>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Card 2 -->
+             <div class="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center">
+                <div class="relative w-full">
+                    <img src="/photos/hazelnut latte.png" alt="Espresso" class="rounded-lg">
+                    <div class="absolute top-2 left-2 bg-white px-2 py-1 rounded-full text-xs font-semibold shadow-md flex items-center space-x-1">
+                        <span>4.8</span>
+                        <span>⭐</span>
+                    </div>
+                </div>
+                <div class="mt-4 text-center">
+                    <h3 class="text-2xl font-semibold text-gray-800">hazelnut Latte</h3>
+                    <p class="text-orange-500 font-semibold">12K</p>
+                    <div class="flex space-x-2 mt-2">
+                        <span class="text-xs bg-orange-200 text-orange-800 font-semibold px-2 py-1 rounded-full">Hot</span>
+                        <span class="text-xs bg-orange-200 text-orange-800 font-semibold px-2 py-1 rounded-full">Cold</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <div class="bg-amber-50/50 p-8 rounded-lg min-h-screen">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold mb-4">What they say about us</h2>
+                <p class="text-gray-600">
+                    We always provide the best service and always maintain the quality of coffee
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow rounded-full">
+                    <div class="flex flex-col items-start gap-4">
+                        <img src="/photos/unsplash_b3AYk8HKCl0.png" alt="Naura" class="w-64 h-50  rounded-lg object-cover">
+                        <div>
+                            <h3 class="font-semibold text-lg mb-2">Naura</h3>
+                            <p class="text-gray-600">I really love the cappuccino, the coffee was very smooth</p>
+                        </div>
+                    </div>
+                </div>
+
+              <!-- Testimonial 1 -->
+              <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow rounded-full">
+                <div class="flex flex-col items-start gap-4">
+                    <img src="/photos/unsplash_b3AYk8HKCl0.png" alt="Naura" class="w-64 h-50  rounded-lg object-cover">
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2">Naura</h3>
+                        <p class="text-gray-600">I really love the cappuccino, the coffee was very smooth</p>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow rounded-full">
+                    <div class="flex flex-col items-start gap-4">
+                        <img src="/photos/unsplash_b3AYk8HKCl0.png" alt="Naura" class="w-64 h-50  rounded-lg object-cover">
+                        <div>
+                            <h3 class="font-semibold text-lg mb-2">Naura</h3>
+                            <p class="text-gray-600">I really love the cappuccino, the coffee was very smooth</p>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" p-4 md:p-8 relative">
+       
+        <!-- Main Content -->
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                <!-- Image Section -->
+                <div class="">
+                    <div class="bg-white p-2 rounded-3xl shadow-lg w-8/12">
+                        <img 
+                            src="/photos/unsplash_3n3mPoGko8g.png" 
+                            alt="Coffee Cup with Latte Art" 
+                            class="w-full h-full object-cover rounded-2xl"
+                        >
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="order-1 md:order-2 ">
+                    <div class="space-y-2">
+                        <h2 class="text-4xl font-bold">
+                            About <span class="relative">
+                                us
+                                <span class="absolute bottom-1 left-0 w-full h-1 bg-amber-400/60"></span>
+                            </span>
+                        </h2>
+                    </div>
+
+                        <h3 class="text-2xl font-semibold">
+                            We provide quality coffee, and ready to deliver.
+                        </h3>
+                        
+                        <p class="text-gray-600 leading-relaxed">
+                            We are a company that makes and distributes delicious drinks. 
+                            our main product is made with a secret recipe and available 
+                            in stores worldwide.
+                        </p>
+
+                        <button class="bg-[#2C1810] text-white px-6 py-3 rounded-full 
+                            hover:bg-[#3F2415] transition-colors duration-300">
+                            Get your coffee
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        // Toggle Mobile Menu
+        document.getElementById("menuButton").onclick = function() {
+            const mobileMenu = document.getElementById("mobileMenu");
+            mobileMenu.classList.toggle("hidden");
+        };
+    </script>
+</body>
+</html>
